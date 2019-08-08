@@ -1,17 +1,10 @@
 /*########## Reset all ##########*/
 
-
 html, body, nav, div, header, footer, section,
 ul, ol, li, a, p, span, b, img, button {
     margin: 0;
     padding: 0;
 }
-
-ol, ul {
-    list-style: none;
-}
-
-
 
 
 /*########## END ##########*/
@@ -134,7 +127,111 @@ header {
     /*should be 165 px*/
 }
 
+.container-normal{
+    width: 90%;
+    max-width: 1200px;
+    margin: 3% auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid blue;
+}
+
+.container-large{
+    width: 100%;
+    margin: auto;
+    background-color: #FAFAFA;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid red;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
 /*########## END ##########*/
+
+
+
+/*#################### OPPORTUNITY ####################*/
+
+/*########## opportunity-section-1 ##########*/
+
+.opportunity-slider-1-slide img{
+    width: 100%;
+}
+
+
+/*########## END ##########*/
+
+/*########## opportunity-section-2 ##########*/
+
+.opportunity-section-2-image,.opportunity-section-2-text,
+    .opportunity-section-4-image,.opportunity-section-4-text{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.opportunity-section-2-image-first{
+    background-image: url("../img/Opportunity/Section-2/first.jpg");
+    padding-top: 80%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+.opportunity-section-2-image-second{
+    background-image: url("../img/Opportunity/Section-2/second.jpg");
+    padding-top: 80%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+/*########## END ##########*/
+
+/*########## opportunity-section-3 ##########*/
+
+
+
+/*########## END ##########*/
+
+/*########## opportunity-section-4 ##########*/
+
+.opportunity-section-4-image-first{
+    background-image: url("../img/Opportunity/Section-4/first.jpg");
+    padding-top: 80%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+/*########## END ##########*/
+/*#################### END of OPPORTUNITY ####################*/
+
+
+
+
+/*#################### CHILDRENSCENTERS ####################*/
+
+/*########## childrenscenters-section-1 ##########*/
+
+.childrenscenters--slider-1-slide img{
+    width: 100%;
+}
+
+
+/*########## END ##########*/
+
+/*#################### END of CHILDRENSCENTERS ####################*/
+
+
+
+
 
 
 /*########## Medias ##########*/

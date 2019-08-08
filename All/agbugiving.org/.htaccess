@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    RewriteRule ^index\.html$ - [L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{HTTPS} on
+    
+    Redirect 301 /afterschool http://brussels.agbuevents.org/#cause
+    #Redirect 301 /childrenscenters http://musicalweekend.codics.solutions/#cause
+    Redirect 301 /opportunity https://agbugiving.org/
+    Redirect 301 http://agbugiving.org/ https://agbugiving.org/
+    #RewriteRule /childrenscenters/$ /agbu-childrens/ [QSA,L,R=301]
+    RewriteRule . /index.html [L]
+ </IfModule>

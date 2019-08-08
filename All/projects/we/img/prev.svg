@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="29px" viewBox="0 0 16 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
+    <title>right</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="AGBU-W.E.-FINAL2" transform="translate(-88.000000, -1855.000000)" fill="#484848" fill-rule="nonzero">
+            <g id="right" transform="translate(96.000000, 1869.500000) rotate(-180.000000) translate(-96.000000, -1869.500000) translate(88.000000, 1855.000000)">
+                <path d="M15.5751922,13.4649824 L2.50733614,0.42809627 C1.93392735,-0.142698757 1.00491339,-0.142698757 0.430056596,0.42809627 C-0.143352199,0.998891297 -0.143352199,1.92601174 0.430056596,2.49680677 L12.4613846,14.4992775 L0.431504598,26.5017482 C-0.141904197,27.0725432 -0.141904197,27.9996637 0.431504598,28.5719037 C1.00491339,29.1426988 1.93537535,29.1426988 2.50878414,28.5719037 L15.5766402,15.5350176 C16.141361,14.9701232 16.141361,14.0284318 15.5751922,13.4649824 Z" id="Chevron_Right_1_"></path>
+            </g>
+        </g>
+    </g>
+</svg>
