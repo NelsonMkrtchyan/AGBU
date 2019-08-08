@@ -1,0 +1,230 @@
+/*########## Reset all ##########*/
+
+
+html, body, nav, div, header, footer, section,
+ul, ol, li, a, p, span, b, img, button {
+    margin: 0;
+    padding: 0;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+
+
+
+/*########## END ##########*/
+
+/*########## Header ##########*/
+
+header {
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 15px 50px -15px #666666;
+    z-index: 100;
+}
+
+.header-wrapper {
+    padding: 15px 0;
+    background-color: #021379;
+}
+
+.header-container {
+    padding: 15px 0;
+    background-color: #1226AA;
+}
+
+.header-container-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 93.5%;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.header-logo {
+    display: flex;
+    position: relative;
+    vertical-align: 0
+}
+
+.header-logo-divider {
+    position: relative;
+    border-right: 1px solid #2a67a0;
+    margin: 0 5px 0;
+    background: none;
+}
+
+.header-logo-block {
+    margin: 0 5%;
+}
+
+.header-button {
+
+}
+
+.header-button-block {
+
+}
+
+/*########## END ##########*/
+
+/*########## Button ##########*/
+
+.button-donate {
+    position: relative;
+    text-align: justify;
+    padding: 10px 30px;
+    border-radius: 24px;
+    outline: none;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.button-donate:focus {
+    outline: none;
+    border: none;
+}
+
+/*########## END ##########*/
+
+/*########## Footer ##########*/
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 10%;
+    font-size: 13px;
+    background-color: #fafafa;
+}
+
+.footer-image {
+    display: inline-block;
+    width: 30%;
+}
+
+.footer-image img {
+    width: 100%;
+}
+
+.footer-links {
+    width: 70%;
+    text-align: right;
+}
+
+.footer-links span {
+    margin-left: 15px;
+    color: #585858;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #585858;
+}
+
+/*########## END ##########*/
+
+/*########## Main ##########*/
+
+.main{
+   padding-top: 170px;
+    /*should be 165 px*/
+}
+
+/*########## END ##########*/
+
+
+/*########## Medias ##########*/
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 992px) {
+
+    /*########## Header ##########*/
+
+    .hidable-992{
+        display: none;
+    }
+
+    .header-container{
+        padding: 0;
+    }
+
+    .header-container-inner{
+        padding: 12px;
+    }
+
+    .button-donate{
+        padding: 10px 20px;
+    }
+
+    /*########## END ##########*/
+
+    /*########## Footer ##########*/
+
+    .footer-container {
+        display: block;
+    }
+
+    .footer-image {
+        width: 100%;
+        margin: 3% auto;
+        text-align: center;
+    }
+
+    .footer-links{
+        width: 100%;
+        text-align: center;
+    }
+
+    /*########## END ##########*/
+
+    /*########## Main ##########*/
+
+    .main{
+        padding-top: 105px;
+    /*should be 100 px*/
+    }
+
+    /*########## END ##########*/
+
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    /*########## Header ##########*/
+
+    .hidable-768{
+        display: none;
+    }
+
+    /*########## END ##########*/
+
+}
+
+@media only screen and (max-width: 576px) {
+
+
+
+    /*########## Footer ##########*/
+
+    .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer-links span{
+        width: 100%;
+        margin: 5% 0;
+    }
+
+    /*########## END ##########*/
+}
+
+/*########## END ##########*/
