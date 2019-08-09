@@ -159,6 +159,7 @@ section {
 /*#################### OPPORTUNITY ####################*/
 
 
+
 /*########## opportunity-section-1 ##########*/
 
 .opportunity-slider-1-slide img {
@@ -377,6 +378,111 @@ display: flex;
 /*########## END ##########*/
 
 /*#################### END of ARTSAKH ####################*/
+
+
+/*#################### WE ####################*/
+
+/*########## we-section-1 ##########*/
+
+
+.we-banner-swiper {
+    width: 100%;
+}
+
+.we-bnner-swiper-slide {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.we-banner-swiper-pagination-bullet {
+    display: inline-block;
+    border-radius: 100%;
+    margin: 0 4px;
+    width: 12px;
+    height: 12px;
+    background-image: url("../img/WE/small_details/Slider_1_Oval(pagination-inactive).png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.we-banner-swiper-pagination-bullet-active {
+    background-image: url("../img/WE/small_details/Slider_1_Oval(pagination-active).png");
+}
+
+.we-banner-swiper-img, .we-banner-swiper-img-2 {
+    width: 100%;
+    padding-top: 32%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.we-banner-swiper-img {
+    background-image: url("../img/WE/Section-1/first.png");
+}
+
+.we-banner-swiper-img-2 {
+    background-image: url("../img/WE/Section-1/second.jpg");
+}
+
+
+
+.we-banner-swiper-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: right;
+}
+
+.we-banner-swiper-text span {
+    color: #1D998C;
+}
+
+.we-banner-text {
+    font-family: 'TruenoRg', sans-serif;
+}
+
+
+/*########## END ##########*/
+
+/*########## we-section-2 ##########*/
+
+
+/*########## END ##########*/
+
+/*########## we-section-3 ##########*/
+
+
+/*########## END ##########*/
+
+/*########## we-section-4 ##########*/
+
+
+/*########## END ##########*/
+
+/*########## we-section-5 ##########*/
+
+
+/*########## END ##########*/
+
+/*########## we-section-6 ##########*/
+
+
+/*########## END ##########*/
+
+/*########## we-section-7 ##########*/
+
+
+/*########## END ##########*/
+
+
+/*#################### END of WE ####################*/
+
 
 
 /*########## Medias ##########*/
