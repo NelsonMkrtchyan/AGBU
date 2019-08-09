@@ -72,7 +72,7 @@ header {
     padding: 10px 30px;
     border-radius: 24px;
     outline: none;
-    background-color: #FFFFFF;
+    background-color: #528942;
     color: #000000;
 }
 
@@ -122,30 +122,32 @@ header {
 
 /*########## Main ##########*/
 
-.main{
-   padding-top: 170px;
+.main {
+    padding-top: 170px;
     /*should be 165 px*/
 }
 
-.container-normal{
+.container-normal {
     width: 90%;
     max-width: 1200px;
     margin: 3% auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     border: 1px solid blue;
 }
 
-.container-large{
+.container-large {
     width: 100%;
     margin: auto;
     background-color: #FAFAFA;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     border: 1px solid red;
 }
 
-section{
+section {
     position: relative;
     width: 100%;
     margin: auto;
@@ -154,12 +156,12 @@ section{
 /*########## END ##########*/
 
 
-
 /*#################### OPPORTUNITY ####################*/
+
 
 /*########## opportunity-section-1 ##########*/
 
-.opportunity-slider-1-slide img{
+.opportunity-slider-1-slide img {
     width: 100%;
 }
 
@@ -168,13 +170,13 @@ section{
 
 /*########## opportunity-section-2 ##########*/
 
-.opportunity-section-2-image,.opportunity-section-2-text,
-    .opportunity-section-4-image,.opportunity-section-4-text{
+.opportunity-section-2-image, .opportunity-section-2-text,
+.opportunity-section-4-image, .opportunity-section-4-text {
     flex: 0 0 50%;
     max-width: 50%;
 }
 
-.opportunity-section-2-image-first{
+.opportunity-section-2-image-first {
     background-image: url("../img/Opportunity/Section-2/first.jpg");
     padding-top: 80%;
     background-size: cover;
@@ -182,7 +184,8 @@ section{
     background-repeat: no-repeat;
     border-radius: 5px;
 }
-.opportunity-section-2-image-second{
+
+.opportunity-section-2-image-second {
     background-image: url("../img/Opportunity/Section-2/second.jpg");
     padding-top: 80%;
     background-size: cover;
@@ -196,12 +199,11 @@ section{
 /*########## opportunity-section-3 ##########*/
 
 
-
 /*########## END ##########*/
 
 /*########## opportunity-section-4 ##########*/
 
-.opportunity-section-4-image-first{
+.opportunity-section-4-image-first {
     background-image: url("../img/Opportunity/Section-4/first.jpg");
     padding-top: 80%;
     background-size: cover;
@@ -211,27 +213,170 @@ section{
 }
 
 /*########## END ##########*/
+
 /*#################### END of OPPORTUNITY ####################*/
-
-
 
 
 /*#################### CHILDRENSCENTERS ####################*/
 
+
 /*########## childrenscenters-section-1 ##########*/
 
-.childrenscenters--slider-1-slide img{
+.childrenscenters-slider-1-slide img {
     width: 100%;
 }
 
+/*########## END ##########*/
+
+
+/*########## childrenscenters-section-2 ##########*/
+
+
+/*########## END ##########*/
+
+/*########## childrenscenters-section-3 ##########*/
+
+.childrenscenters-section-3-image, .childrenscenters-section-3-text {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.childrenscenters-section-3-image-first {
+    background-image: url("../img/ChildrensCenters/Section-3/first.jpeg");
+    padding-top: 80%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+/*########## END ##########*/
+
+/*########## childrenscenters-section-4 ##########*/
+
+
+.slider-item {
+    position: relative;
+}
+
+.slider-item img {
+    height: 100%;
+
+}
+
+/*########## END ##########*/
+
+/*########## childrenscenters-section-5 ##########*/
+
+
+/*########## END ##########*/
+
+/*########## childrenscenters-section-6 ##########*/
+
+.childrenscenters-section-6-image, .childrenscenters-section-6-text {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.childrenscenters-section-6-image-first {
+    background-image: url("../img/ChildrensCenters/Section-6/first.png");
+    padding-top: 80%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
 
 /*########## END ##########*/
 
 /*#################### END of CHILDRENSCENTERS ####################*/
 
 
+/*#################### ARTSAKH ####################*/
+
+/*########## artsakh-section-1 ##########*/
+
+.artsakh-slider-1-slide img {
+    width: 100%;
+}
+
+/*########## END ##########*/
+
+/*########## artsakh-section-2 ##########*/
 
 
+.artsakh-section-2-image, .artsakh-section-2-text {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.artsakh-section-2-image-first {
+    background-image: url("../img/Artsakh/Section-2/kids.jpg");
+    padding-top: 80%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+/*########## END ##########*/
+
+
+/*########## artsakh-section-3 ##########*/
+
+.container-inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.artsakh-section-3-logo-block{
+    margin: auto;
+    text-align: center;
+}
+
+.artsakh-section-3-logo-block img{
+    width: 100%;
+}
+
+
+/*########## END ##########*/
+
+/*########## artsakh-section-4 ##########*/
+
+.artsakh-section-4-blocks {
+display: flex;
+    flex-wrap: wrap;
+}
+.artsakh-section-4-blocks-inner{
+    /*width: 33.33%;*/
+    width: 31.33%;
+    margin: auto 1%;
+}
+.artsakh-section-4-blocks-inner img,.artsakh-section-4-blocks-inner h2,.artsakh-section-4-blocks-inner span{
+    width: 100%;
+}
+
+/*########## END ##########*/
+
+/*########## artsakh-section-5 ##########*/
+
+.artsakh-section-5-banner-section {
+    background-image: url("../img/Artsakh/Section-5/bottomimage.inspect@1x.jpg");
+    padding: 10% 20% 10% 20%;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*########## END ##########*/
+
+/*########## artsakh-section-6 ##########*/
+
+
+/*########## END ##########*/
+
+/*#################### END of ARTSAKH ####################*/
 
 
 /*########## Medias ##########*/
@@ -243,27 +388,24 @@ section{
 @media only screen and (max-width: 992px) {
 
     /*########## Header ##########*/
-
-    .hidable-992{
+    .hidable-992 {
         display: none;
     }
 
-    .header-container{
+    .header-container {
         padding: 0;
     }
 
-    .header-container-inner{
+    .header-container-inner {
         padding: 12px;
     }
 
-    .button-donate{
+    .button-donate {
         padding: 10px 20px;
     }
 
     /*########## END ##########*/
-
     /*########## Footer ##########*/
-
     .footer-container {
         display: block;
     }
@@ -274,18 +416,16 @@ section{
         text-align: center;
     }
 
-    .footer-links{
+    .footer-links {
         width: 100%;
         text-align: center;
     }
 
     /*########## END ##########*/
-
     /*########## Main ##########*/
-
-    .main{
+    .main {
         padding-top: 105px;
-    /*should be 100 px*/
+        /*should be 100 px*/
     }
 
     /*########## END ##########*/
@@ -296,8 +436,7 @@ section{
 @media only screen and (max-width: 768px) {
 
     /*########## Header ##########*/
-
-    .hidable-768{
+    .hidable-768 {
         display: none;
     }
 
@@ -308,15 +447,13 @@ section{
 @media only screen and (max-width: 576px) {
 
 
-
     /*########## Footer ##########*/
-
     .footer-links {
         display: flex;
         flex-wrap: wrap;
     }
 
-    .footer-links span{
+    .footer-links span {
         width: 100%;
         margin: 5% 0;
     }
