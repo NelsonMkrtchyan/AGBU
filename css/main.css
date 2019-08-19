@@ -69,6 +69,7 @@ header {
 .button-donate {
     position: relative;
     text-align: justify;
+    text-decoration: none;
     padding: 10px 30px;
     border-radius: 24px;
     outline: none;
@@ -122,8 +123,45 @@ header {
 
 /*########## Main ##########*/
 
+@font-face {
+    font-family: TruenoRg;
+    src: url(../fonts/TruenoRg/TruenoRg.eot) format("eot"),
+    url(../fonts/TruenoRg/TruenoRg.otf) format("otf"),
+    url(../fonts/TruenoRg/TruenoRg.svg) format("svg"),
+    url(../fonts/TruenoRg/TruenoRg.ttf) format("ttf"),
+    url(../fonts/TruenoRg/TruenoRg.woff) format("woff");
+}
+
+@font-face {
+    font-family: TruenoBd;
+    src: url(../fonts/TruenoBd/TruenoBd.eot) format("eot"),
+    url(../fonts/TruenoBd/TruenoBd.otf) format("otf"),
+    url(../fonts/TruenoBd/TruenoBd.svg) format("svg"),
+    url(../fonts/TruenoBd/TruenoBd.ttf) format("ttf"),
+    url(../fonts/TruenoBd/TruenoBd.woff) format("woff");
+}
+
+@font-face {
+    font-family: TruenoSBd;
+    src: url(../fonts/TruenoSBd/TruenoSBd.eot) format("eot"),
+    url(../fonts/TruenoSBd/TruenoSBd.otf) format("otf"),
+    url(../fonts/TruenoSBd/TruenoSBd.svg) format("svg"),
+    url(../fonts/TruenoSBd/TruenoSBd.ttf) format("ttf"),
+    url(../fonts/TruenoSBd/TruenoSBd.woff) format("woff");
+}
+
+@font-face {
+    font-family: TruenoLt;
+    src: url(../fonts/TruenoLt/TruenoLt.eot) format("eot"),
+    url(../fonts/TruenoLt/TruenoLt.otf) format("otf"),
+    url(../fonts/TruenoLt/TruenoLt.svg) format("svg"),
+    url(../fonts/TruenoLt/TruenoLt.ttf) format("ttf"),
+    url(../fonts/TruenoLt/TruenoLt.woff) format("woff");
+}
+
+
 .main {
-    padding-top: 170px;
+    padding-top: 165px;
     /*should be 165 px*/
 }
 
@@ -134,7 +172,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
 }
 
 .container-large {
@@ -144,7 +182,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 section {
@@ -158,6 +196,82 @@ section {
 
 /*#################### OPPORTUNITY ####################*/
 
+.opportunity{
+    font-family: 'TruenoLt', sans-serif;
+    color: #494949;
+}
+
+.opportunity h1{
+    font-size: 24px;
+    letter-spacing: 0.32px;
+    font-weight: bold;
+}
+
+.opportunity ul{
+    list-style: none;
+}
+
+.opportunity p{
+    margin-bottom: 5%;
+}
+
+.opportunity-section-2 ul li{
+    margin-bottom: 2%;
+}
+
+.opportunity-section-2 ul li:before{
+    content: '';
+    background-color: #61b0bb;
+    display: inline-block;
+    vertical-align: middle;
+    width: 1.1%;
+    padding-top: 1.1%;
+    float: left;
+    line-height: 1.5;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    margin-top: 1.5%;
+    margin-right: 15px;
+}
+
+.opportunity-section-3 ul li{
+    margin-bottom: 3%;
+}
+.opportunity ul li span{
+    line-height: 25px;
+}
+
+.opportunity-section-3 ul .col-md-5:before{
+    content: '';
+    background-color: #61b0bb;
+    display: inline-block;
+    vertical-align: middle;
+    width: 1.5%;
+    padding-top: 1.5%;
+    float: left;
+    line-height: 1.5;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    margin-top: 1.7%;
+    margin-right: 15px;
+}
+.opportunity-section-3 ul .col-md-7:before{
+    content: '';
+    background-color: #61b0bb;
+    display: inline-block;
+    vertical-align: middle;
+    width: 1%;
+    padding-top: 1%;
+    float: left;
+    line-height: 1.5;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    margin-top: 1.2%;
+    margin-right: 15px;
+}
 
 
 /*########## opportunity-section-1 ##########*/
@@ -179,18 +293,18 @@ section {
 
 .opportunity-section-2-image-first {
     background-image: url("../img/Opportunity/Section-2/first.jpg");
-    padding-top: 80%;
-    background-size: cover;
-    background-position: center;
+    padding-top: 65%;
+    background-size: contain;
+    background-position: left;
     background-repeat: no-repeat;
     border-radius: 5px;
 }
 
 .opportunity-section-2-image-second {
     background-image: url("../img/Opportunity/Section-2/second.jpg");
-    padding-top: 80%;
-    background-size: cover;
-    background-position: center;
+    padding-top: 60%;
+    background-size: contain;
+    background-position: right;
     background-repeat: no-repeat;
     border-radius: 5px;
 }
@@ -199,18 +313,53 @@ section {
 
 /*########## opportunity-section-3 ##########*/
 
+.col-md-7{
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+}
+.col-md-5{
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+}
+
+.opportunity-section-3 h1 ,.opportunity-section-3 ul{
+    width: 100%;
+}
+
+.opportunity-section-3-flex-list{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 /*########## END ##########*/
 
 /*########## opportunity-section-4 ##########*/
 
 .opportunity-section-4-image-first {
-    background-image: url("../img/Opportunity/Section-4/first.jpg");
-    padding-top: 80%;
-    background-size: cover;
-    background-position: center;
+    background-image: url(../img/Opportunity/Section-4/first.jpg);
+    padding-top: 70%;
+    background-size: contain;
+    background-position: left;
     background-repeat: no-repeat;
     border-radius: 5px;
+}
+
+.opportunity-section-4-text p a{
+    color: #61b0bb;
+    text-decoration: none;
+}
+
+.opportunity-section-4-text p a:hover{
+    color: #007bff;
+    text-decoration: underline;
+}
+.brochure{
+    font-size: 20px;
+    font-style: italic;
+    text-decoration: underline !important;
+    letter-spacing: 0.25px;
+    position: relative;
+    display: inline-block;
 }
 
 /*########## END ##########*/
@@ -219,6 +368,86 @@ section {
 
 
 /*#################### CHILDRENSCENTERS ####################*/
+.childrenscenters{
+    font-family: 'TruenoLt', sans-serif;
+}
+
+
+.childrenscenters h2, h3 {
+    width: 100%;
+    text-align: left;
+    display: block;
+    color: #373737;
+    font-weight: bold;
+    letter-spacing: -0.35px;
+}
+
+.childrenscenters h2 {
+    font-size: 26px;
+    line-height: 30px;
+}
+
+.childrenscenters h4 {
+    font-weight: bold;
+}
+
+.childrenscenters p, h4 {
+    font-size: 16px;
+    color: #585858;
+    line-height: 27px;
+    font-weight: 300;
+}
+
+.childrenscenters ul {
+    list-style: none;
+}
+
+.childrenscenters ul li {
+    padding: 0.5%
+}
+
+.childrenscenters ul li:before {
+    content: '';
+    background-color: #61b0bb;
+    display: inline-block;
+    vertical-align: middle;
+    width: 0.6%;
+    padding-top: 0.6%;
+    height: 0.5%;
+    float: left;
+    line-height: 1%;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    margin-top: 1%;
+    margin-right: 15px;
+}
+
+.childrenscenters-slider-1-pagination-bullet {
+    display: inline-block;
+    height: 8px !important;
+    width: 8px !important;
+    background-color: transparent !important;
+    border: 1px solid #ffffff !important;
+    -webkit-transform: none !important;
+    -ms-transform: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+    margin-left: 8px !important;
+    margin-right: 8px !important;
+    border-radius: 100%;
+    margin-bottom: 1%;
+}
+
+.childrenscenters-slider-1-pagination-bullet-active {
+    background: #61B0BB !important;
+    border: 1px solid #61B0BB !important;
+    height: 8px !important;
+    width: 8px !important;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+}
 
 
 /*########## childrenscenters-section-1 ##########*/
@@ -242,11 +471,35 @@ section {
     max-width: 50%;
 }
 
+.childrenscenters-section-3-inner {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.childrenscenters-section-3-text ul li:before {
+    content: '';
+    background-color: #61b0bb;
+    display: inline-block;
+    vertical-align: middle;
+    width: 1.2%;
+    padding-top: 1.2%;
+    height: 1%;
+    float: left;
+    line-height: 2%;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    margin-top: 2%;
+    margin-right: 15px;
+}
+
 .childrenscenters-section-3-image-first {
     background-image: url("../img/ChildrensCenters/Section-3/first.jpeg");
     padding-top: 80%;
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
+    background-position: right;
     background-repeat: no-repeat;
     border-radius: 5px;
 }
@@ -256,37 +509,210 @@ section {
 /*########## childrenscenters-section-4 ##########*/
 
 
+.childrenscenters-section-4-slider-title {
+    text-align: center !important;
+    padding-bottom: 3%;
+}
+
+
+/*$$$$$$$ OLD PART $$$$$$$$*/
+.content-block-inner {
+    /*padding-top: 20px;*/
+    margin: 0 auto;
+    display: block;
+
+}
+
+.content-block-inner-title {
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.lastBlock {
+
+    padding-top: 50px;
+}
+
+.content-block-inner-img img {
+    width: 100%;
+}
+
+.content-block-inner-img-mobile {
+    display: none;
+}
+
+.slider-item span {
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    display: none;
+    bottom: 0;
+    margin: 0 auto;
+    padding: 5px 15px 5px 15px;
+    left: 0;
+    right: 0;
+    opacity: 0.6;
+    line-height: 20px;
+    font-size: 13px;
+}
+
+.slick-slide img {
+    width: 100% !important;
+}
+
+.slick-slide {
+    transform: scale(1);
+    transition: .3s ease-in-out all;
+    z-index: 10;
+}
+
+.slick-slide.slick-center {
+    opacity: 1;
+    transform: scale(1.2);
+    z-index: 10000000000;
+}
+
+.slick-list {
+    overflow: visible !important;
+}
+
+.slick-slide.slick-center span {
+    display: block;
+}
+
 .slider-item {
     position: relative;
 }
 
-.slider-item img {
-    height: 100%;
+.slick-prev {
+    background-image: url("../img/ChildrensCenters/Section-4/arrow-left.png") !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    z-index: 1;
+    opacity: 1;
+    height: 30px !important;
+    width: 30px !important;
+    left: 10px !important;
 
 }
+
+.slick-next {
+    background-image: url("../img/ChildrensCenters/Section-4/arrow-right.png") !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    z-index: 1;
+    opacity: 1;
+    height: 30px !important;
+    width: 30px !important;
+    right: 8px !important;
+}
+
+.slick-prev:before, .slick-next:before {
+    display: none;
+}
+
+.content-block-inner-link {
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+
+.content-block-inner-link a {
+    text-decoration: underline;
+    color: #61B0BB;
+    font-weight: bold;
+}
+
+.slider-block {
+    /*padding-top: 50px;*/
+    overflow: hidden;
+}
+
+/*######### OLD PART #########*/
 
 /*########## END ##########*/
 
 /*########## childrenscenters-section-5 ##########*/
 
+.childrenscenters-section-5-text {
+    width: 100%;
+}
+
+.childrenscenters-section-5-text-link {
+    text-decoration: underline;
+    color: #61B0BB;
+    font-weight: bold;
+}
 
 /*########## END ##########*/
 
 /*########## childrenscenters-section-6 ##########*/
+.childrenscenters-section-6 .container-normal {
+    justify-content: space-between;
+}
 
-.childrenscenters-section-6-image, .childrenscenters-section-6-text {
-    flex: 0 0 50%;
-    max-width: 50%;
+.childrenscenters-section-6-text {
+    flex: 0 0 55%;
+    max-width: 55%;
+}
+
+.childrenscenters-section-6-image {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
 }
 
 .childrenscenters-section-6-image-first {
     background-image: url("../img/ChildrensCenters/Section-6/first.png");
-    padding-top: 80%;
+    /*padding-top: 80%;*/
+    height: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 5px;
 }
+
+.childrenscenters-section-6-text-link {
+    color: #2c2c2c;
+    font-weight: bold;
+}
+
+.childrenscenters-section-6-text-different-link {
+    text-decoration: none;
+}
+
+.childrenscenters-section-6-text-color {
+    color: #2c2c2c;
+}
+
+
+.way-to-give {
+    border: 1px solid #61B0BB;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.14);
+    padding: 17px 20px;
+    line-height: 19px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-right: 3%;
+    display: flex;
+}
+
+.way-to-give-inner-2 {
+    margin-left: 10%;
+}
+
+.way-to-give-btn {
+    margin-left: 15%;
+    padding: 5px 30px;
+    border: 1px solid #61B0BB !important;
+    background-color: #FFFFFF;
+    color: #61B0BB;
+}
+
+.way-to-give-btn:focus, .way-to-give-btn:active {
+    outline: none;
+}
+
 
 /*########## END ##########*/
 
@@ -325,18 +751,18 @@ section {
 
 /*########## artsakh-section-3 ##########*/
 
-.container-inner{
+.container-inner {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.artsakh-section-3-logo-block{
+.artsakh-section-3-logo-block {
     margin: auto;
     text-align: center;
 }
 
-.artsakh-section-3-logo-block img{
+.artsakh-section-3-logo-block img {
     width: 100%;
 }
 
@@ -346,15 +772,17 @@ section {
 /*########## artsakh-section-4 ##########*/
 
 .artsakh-section-4-blocks {
-display: flex;
+    display: flex;
     flex-wrap: wrap;
 }
-.artsakh-section-4-blocks-inner{
+
+.artsakh-section-4-blocks-inner {
     /*width: 33.33%;*/
     width: 31.33%;
     margin: auto 1%;
 }
-.artsakh-section-4-blocks-inner img,.artsakh-section-4-blocks-inner h2,.artsakh-section-4-blocks-inner span{
+
+.artsakh-section-4-blocks-inner img, .artsakh-section-4-blocks-inner h2, .artsakh-section-4-blocks-inner span {
     width: 100%;
 }
 
@@ -428,7 +856,6 @@ display: flex;
 }
 
 
-
 .we-banner-swiper-text {
     position: absolute;
     top: 50%;
@@ -484,7 +911,6 @@ display: flex;
 /*#################### END of WE ####################*/
 
 
-
 /*########## Medias ##########*/
 
 @media only screen and (max-width: 1200px) {
@@ -530,13 +956,59 @@ display: flex;
     /*########## END ##########*/
     /*########## Main ##########*/
     .main {
-        padding-top: 105px;
+        padding-top: 100px;
         /*should be 100 px*/
     }
 
     /*########## END ##########*/
+    /*########## Childrenscenters ##########*/
+    .childrenscenters-section-3-image, .childrenscenters-section-3-text,
+    .childrenscenters-section-6-image, .childrenscenters-section-6-text {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 
+    .childrenscenters-section-3-image-first,
+    .childrenscenters-section-6-image-first {
+        padding-top: 80%;
+        height: unset;
+        background-position: center;
+        background-size: contain;
 
+    }
+
+    .childrenscenters-section-3-image {
+        margin-top: 5%;
+    }
+
+    .childrenscenters ul li:before {
+        width: 1%;
+        padding-top: 1%;
+        margin-top: 2%;
+    }
+    /*########## END ##########*/
+
+    /*########## Opportunity ##########*/
+
+    .opportunity-section-2 ul li:before{
+
+        width: 2%;
+        padding-top: 2%;
+        margin-top: 3.5%;
+    }
+
+    .opportunity-section-3 ul .col-md-5:before{
+        width: 2.6%;
+        padding-top: 2.6%;
+        margin-top: 3.5%;
+    }
+    .opportunity-section-3 ul .col-md-7:before{
+        width: 1.7%;
+        padding-top: 1.7%;
+        margin-top: 3%;
+    }
+
+    /*########## END ##########*/
 }
 
 @media only screen and (max-width: 768px) {
@@ -547,6 +1019,10 @@ display: flex;
     }
 
     /*########## END ##########*/
+    /*!*########## Childrenscenters ##########*!*/
+
+    /*!*########## END ##########*!*/
+
 
 }
 
@@ -554,7 +1030,7 @@ display: flex;
 
 
     /*########## Footer ##########*/
-    .footer-links {
+     .footer-links {
         display: flex;
         flex-wrap: wrap;
     }
@@ -563,8 +1039,73 @@ display: flex;
         width: 100%;
         margin: 5% 0;
     }
-
     /*########## END ##########*/
+
+    /*!*########## Childrenscenters ##########*!*/
+    .way-to-give {
+        flex-wrap: wrap;
+    }
+
+    .way-to-give p {
+        width: 100%;
+    }
+
+    .way-to-give-inner-2, .way-to-give-btn {
+        margin: 3% 0 0 0;
+    }
+
+    .way-to-give-inner-1 {
+        font-weight: bold !important;
+    }
+
+    .childrenscenters ul li:before {
+        width: 2%;
+        padding-top: 2%;
+        margin-top: 4%;
+    }
+
+    .way-to-give-btn {
+        margin-left: 10%;
+    }
+
+    .childrenscenters h2 {
+        font-size: 20px;
+        padding-top: 20px;
+    }
+    /*!*########## END ##########*!*/
+
+    /*!*########## Opportunity ##########*!*/
+
+    .opportunity h1{
+        font-size: 20px;
+    }
+
+    .opportunity-section-2-image, .opportunity-section-2-text,
+    .opportunity-section-4-image, .opportunity-section-4-text {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .opportunity-section-2-image-first, .opportunity-section-2-image-second ,
+    .opportunity-section-4-image-first{
+        padding-top: 80%;
+        background-position: center;
+    }
+
+    .col-md-5, .col-md-7{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .opportunity-section-3 ul .col-md-5:before ,  .opportunity-section-3 ul .col-md-7:before{
+        width: 2%;
+        padding-top: 2%;
+        margin-top: 3.5%;
+    }
+
+
+    /*!*########## END ##########*!*/
+
 }
+
 
 /*########## END ##########*/

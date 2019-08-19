@@ -24,6 +24,7 @@ var childrenscentersSwiper = new Swiper('.childrenscenters-slider-1', {
     direction: 'horizontal',
     loop: true,
     speed: 3000,
+    type: 'bullets',
 
     autoplay: {delay: 2500},
     disableOnInteraction: false,
@@ -33,8 +34,8 @@ var childrenscentersSwiper = new Swiper('.childrenscenters-slider-1', {
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
-        // bulletClass: "opportunity-slider-1-pagination-bullet",
-        // bulletActiveClass: "opportunity-slider-1-pagination-bullet-active",
+        bulletClass: "childrenscenters-slider-1-pagination-bullet",
+        bulletActiveClass: "childrenscenters-slider-1-pagination-bullet-active",
     },
 
 });
@@ -83,21 +84,15 @@ var weSwiper = new Swiper('.we-banner-swiper', {
 
 
 // ##########################################
-
 $(document).ready(function () {
 
-
-    var childrenscentersSlider = $('.childrenscenters-slider-2').slick({
-
-        dots: true,
-        // arrows: false,
-        // autoplay: true,
-        // autoplaySpeed: 1000,
-
+    var $showcaseSlider = $(".showcase-slider").slick({
         centerMode: true,
+        centerPadding: '120px',
 
-        slidesToShow: 1,
+        slidesToShow: 3,
         responsive: [
+
             {
                 breakpoint: 768,
                 settings: {
@@ -108,16 +103,14 @@ $(document).ready(function () {
                 }
             }
         ]
-
-    })
-
+    });
 
     function changeSlideNext() {
-        childrenscentersSlider.slick('slickNext');
+        $showcaseSlider.slick('slickNext');
     }
 
     function changeSlidePrev() {
-        childrenscentersSlider.slick('slickPrev');
+        $showcaseSlider.slick('slickPrev');
     }
 
     function killSlideChange(timer) {
@@ -125,7 +118,7 @@ $(document).ready(function () {
     }
 
 
-    $(".childrenscentersSlider .slider-item").on('mouseover', function () {
+    $(".showcase-slider .slider-item").on('mouseover', function () {
         var middle_index = $(".slick-center").attr('data-slick-index');
         var current_index = $(this).attr('data-slick-index');
         console.log('nnnn', middle_index - current_index);
@@ -140,7 +133,7 @@ $(document).ready(function () {
 
     });
 
-    $(".childrenscentersSlider .slider-item").on('mouseout', function () {
+    $(".showcase-slider .slider-item").on('mouseout', function () {
         var middle_index = $(".slick-center").attr('data-slick-index');
         var current_index = $(this).attr('data-slick-index');
         console.log('nnnn', middle_index - current_index);
@@ -157,4 +150,3 @@ $(document).ready(function () {
 
 
 });
-
