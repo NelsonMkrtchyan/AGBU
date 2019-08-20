@@ -12,8 +12,8 @@ var opportunitySwiper = new Swiper('.opportunity-slider-1', {
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
-        // bulletClass: "opportunity-slider-1-pagination-bullet",
-        // bulletActiveClass: "opportunity-slider-1-pagination-bullet-active",
+        bulletClass: "opportunity-slider-1-pagination-bullet",
+        bulletActiveClass: "opportunity-slider-1-pagination-bullet-active",
     },
 
 });
@@ -55,8 +55,8 @@ var artsakhSwiper = new Swiper('.artsakh-slider-1', {
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
-        // bulletClass: "opportunity-slider-1-pagination-bullet",
-        // bulletActiveClass: "opportunity-slider-1-pagination-bullet-active",
+        bulletClass: "artsakh-slider-1-pagination-bullet",
+        bulletActiveClass: "artsakh-slider-1-pagination-bullet-active",
     },
 
 });
@@ -78,6 +78,32 @@ var weSwiper = new Swiper('.we-banner-swiper', {
     speed: 3000,
     fadeEffect: {
         crossFade: true
+    },
+
+});
+
+var weSwiper2 = new Swiper('.we-content-swiper', {
+    direction: 'horizontal',
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        modifierClass: "swiper-pagination-content-",
+        bulletClass: "we-content-swiper-pagination-bullet",
+        bulletActiveClass: "we-content-swiper-pagination-bullet-active",
+    },
+    autoplay: {
+        delay: 3000,
+    },
+    disableOnInteraction: false,
+    effect: "fade",
+    speed: 3000,
+    fadeEffect: {
+        crossFade: true
+    },
+    navigation: {
+        nextEl: '.we-swiper-button-next',
+        prevEl: '.we-swiper-button-prev',
     },
 
 });
