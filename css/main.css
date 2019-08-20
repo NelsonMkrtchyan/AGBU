@@ -163,6 +163,9 @@ header {
     padding-top: 165px;
     /*should be 165 px*/
 }
+body{
+    font-family: 'TruenoLt', sans-serif;
+}
 
 .container-normal {
     width: 90%;
@@ -188,6 +191,27 @@ section {
     position: relative;
     width: 100%;
     margin: auto;
+}
+
+.artsakh-btn{
+    background-color: #58B947;
+    color: white;
+    font-weight: bold;
+}
+.opportunity-btn{
+    background-color: #61b0bb;
+    color: white;
+    font-weight: bold;
+}
+.childrenscenters-btn{
+    background-color: #61b0bb;
+    color: white;
+    font-weight: bold;
+}
+.we-btn{
+     background-color: #1D998C;
+     color: white;
+     font-weight: bold;
 }
 
 /*########## END ##########*/
