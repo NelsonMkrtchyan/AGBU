@@ -236,6 +236,10 @@ section {
 
 .opportunity p {
     margin-bottom: 5%;
+    font-size: 19px;
+}
+.opportunity span {
+    font-size: 19px;
 }
 
 .opportunity-section-2 ul li {
@@ -459,10 +463,6 @@ section {
 .childrenscenters h2 {
     font-size: 26px;
     line-height: 30px;
-}
-
-.childrenscenters h4 {
-    font-weight: bold;
 }
 
 .childrenscenters p, h4 {
